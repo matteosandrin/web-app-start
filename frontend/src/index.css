@@ -14,7 +14,7 @@ h1 {
 
 td,
 th {
-  @apply px-2 py-1 text-left;
+  @apply px-2 py-1 text-left border border-black;
 }
 
 input {

@@ -1,25 +1,26 @@
 @import "tailwindcss";
 
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-    @apply p-4;
+  @apply p-4;
 }
 
 h1 {
-    @apply text-2xl font-bold
+  @apply text-2xl font-bold;
 }
 
-td, th {
-    @apply px-2 py-1 text-left;
+td,
+th {
+  @apply px-2 py-1 text-left;
 }
 
 input {
-    @apply border border-black mt-2
+  @apply border border-black mt-2;
 }
 
 button {
-    @apply bg-blue-500 text-white px-2 py-1 rounded-md mt-2;
+  @apply bg-blue-500 text-white px-2 py-1 rounded-md mt-2;
 }

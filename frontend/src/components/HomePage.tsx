@@ -18,7 +18,7 @@ export function HomePage() {
   };
 
   const handleCreate = async () => {
-    if (inputUsernameRef.current && inputEmailRef.current) {
+    if (inputUsernameRef.current?.value && inputEmailRef.current?.value) {
       await userApi.create({
         username: inputUsernameRef.current.value,
         email: inputEmailRef.current.value,
@@ -58,15 +58,13 @@ export function HomePage() {
           ))}
         </tbody>
       </table>
-      <p className="mt-8">
+      <div className="flex flex-col gap-2 mt-4 w-xs">
         <input placeholder="Username" ref={inputUsernameRef} />
-        <br />
         <input placeholder="Email" ref={inputEmailRef} />
-        <br />
         <button type="submit" onClick={() => handleCreate()}>
           Create
         </button>
-      </p>
+      </div>
     </div>
   );
 }

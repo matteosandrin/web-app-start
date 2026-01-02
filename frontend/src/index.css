@@ -18,9 +18,9 @@ th {
 }
 
 input {
-  @apply border border-black mt-2;
+  @apply border border-black;
 }
 
 button {
-  @apply bg-blue-500 text-white px-2 py-1 rounded-md mt-2;
+  @apply bg-blue-500 text-white px-2 py-1 rounded-md;
 }
